@@ -1,6 +1,22 @@
 {
-  "need_generate_pdf": true,
-  "docsets_to_publish": [],
+  "docsets_to_publish": [
+    {
+      "docset_name": "E2E_DocFxV3",
+      "build_source_folder": "E2E_DocsBranch_Dynamic",
+      "build_output_subfolder": "E2E_DocFxV3",
+      "locale": "ja-jp",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    }
+  ],
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
@@ -24,7 +40,7 @@
       "branch": "live",
       "branch_mapping": {
         "live": "live",
-        "master": "master"
+        "main": "main"
       }
     }
   ],
@@ -38,5 +54,6 @@
   "docs_build_engine": {
     "name": "docfx_v3"
   },
+  "need_generate_pdf": true,
   "need_generate_intellisense": false
 }
